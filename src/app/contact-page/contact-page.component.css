@@ -1,0 +1,11 @@
+#email {
+    margin-left: 0.5%;
+}
+
+#message {
+    margin-left: 0.5%;
+}
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }

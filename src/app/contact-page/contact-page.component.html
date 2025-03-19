@@ -1,0 +1,16 @@
+
+<div class="content-box">
+    <h3>Send the owner a message:</h3>
+    <div>
+        <label for="email">Your Email Address:</label>
+        <input type="email" id="email" [(ngModel)]="email" />
+    </div>
+<div>
+    <label for="message">Your Message :</label>
+    <textarea type="text"
+    rows="5"
+    cols="20" 
+    id="message" [(ngModel)]="message"></textarea>
+</div>
+<button (click)="sendMessage()" [disabled]="!email">Send</button>
+</div>
