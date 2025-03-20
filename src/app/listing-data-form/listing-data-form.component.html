@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit()">
+<form (ngSubmit)="onButtonClicked()">
     <div>
         <label for="name"> Name : </label>
             <input type="text" id="name" name="name" [(ngModel)]="name" placeholder="Name" />
@@ -14,5 +14,5 @@
             <input type="text" id="price" name="price" [(ngModel)]="price" placeholder="Price" />
       
     </div>
-    <button type="submit" style="margin-left: 0.4%;">Create New Listing</button>
+    <button type="submit" style="margin-left: 0.4%;">{{buttonText}}</button>
 </form>
