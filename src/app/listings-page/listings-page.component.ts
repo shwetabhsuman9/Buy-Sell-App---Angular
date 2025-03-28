@@ -15,7 +15,8 @@ export class ListingsPageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.listings = this.listingsService.getListings();
+    //when data is called from server we will subscribe to it and assign it to this.listings inside the callback fn()
+     this.listingsService.getListings().subscribe(listings => this.listings = listings);
   }
 
 }
