@@ -40,4 +40,8 @@ export class ListingsService {
   deleteListing(id:string) :Observable<any>{   //used any because it doesn't return a listing observable
     return this.http.delete<any>(`/api/listings/${id}`);
   }
+
+  createListing(name:string , description:string, price:number) :Observable<Listing>{
+    return this.http.post<Listing>('/api/listings',{name,description,price},httpOptions); //url,body,headers
+  }
 }
