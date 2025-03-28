@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Listing } from '../types';
-import { fakeListings } from '../fake-data';
 import { ListingsService } from '../listings.service';
+import { Listing } from '../types';
 @Component({
   selector: 'app-listing-detail-page',
   templateUrl: './listing-detail-page.component.html',
@@ -32,7 +31,7 @@ export class ListingDetailPageComponent implements OnInit {
      this.listingsService.addViewToListing(id).subscribe(() => console.log("Views Updated!"));
 
     }
-    
+
    }
    
 
